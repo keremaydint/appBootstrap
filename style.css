@@ -69,6 +69,23 @@ Special Font: font-family: 'Kanit', sans-serif;
   font-size: 80px;
   line-height: 90px;
   font-weight: 300;
+  background: linear-gradient(
+    to right,
+    #ffa500,
+    #ff7f4e,
+    #ff6388,
+    #ff63c1,
+    #c978ed,
+    #be7bed,
+    #b37eec,
+    #a880eb,
+    #d675d0,
+    #f16faf,
+    #fc738f,
+    #fa8072
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .header-subtitle {
@@ -302,6 +319,23 @@ Special Font: font-family: 'Kanit', sans-serif;
   font-size: 80px;
   line-height: 90px;
   font-weight: 300;
+  background: linear-gradient(
+    to right,
+    #ffa500,
+    #ff7f4e,
+    #ff6388,
+    #ff63c1,
+    #c978ed,
+    #be7bed,
+    #b37eec,
+    #a880eb,
+    #d675d0,
+    #f16faf,
+    #fc738f,
+    #fa8072
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .basic-subtitle {
