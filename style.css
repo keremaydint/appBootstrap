@@ -59,6 +59,11 @@ Special Font: font-family: 'Kanit', sans-serif;
   border-color: transparent;
 }
 
+.btn-primary:hover {
+  background-color: #ffa500 !important;
+  border-color: transparent;
+}
+
 /*! Header */
 .header-title {
   font-size: 80px;
