@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stumble Guys</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Custon CSS -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--! Navigation Start -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm py-3">
+      <div class="container px-5">
+        <a class="navbar-brand special-font" href="#page-top">Stumble Guys</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item me-lg-3">
+              <a class="nav-link" href="#download">Download</a>
+            </li>
+          </ul>
+          <!-- Send Feedback Button Trigger-->
+          <button
+            type="button"
+            class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="bi bi-chat-text-fill me-1"></i>
+            <span class="small">Send Feedback</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav / Send Feedback Modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-spec p-4">
+            <h5 class="modal-title" id="exampleModalLabel">Send Feedback</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <form
+              action="https://formsubmit.io/send/1d809a31-226b-471d-9ebf-21f4e5dc1e20"
+              method="POST"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                />
+                <label for="name">Full name</label>
+                <div class="invalid-feedback">A name is required.</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback">An email is required.</div>
+                <div class="invalid-feedback">Email is not valid.</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
+                />
+                <label for="phone">Phone number</label>
+                <div class="invalid-feedback">A phone number is required.</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control mb-3"
+                  id="message"
+                  type="text"
+                  name="message"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                  required
+                ></textarea>
+                <label for="message" class="form-label">Message</label>
+                <div class="invalid-feedback">A message is required.</div>
+              </div>
+
+              <div class="d-grid">
+                <button
+                  class="btn btn-primary rounded-pill btn-lg"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+                <p id="responseMessage" style="display: none">
+                  Mesajınız alınmıştır, en kısa sürede cevap vereceğiz.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--? Navigation End-->
+
+    <!--! Header Start -->
+    <header class="header pt-5">
+      <div class="container px-5 pt-5">
+        <div class="row py-5 d-flex align-items-center">
+          <div class="col-lg-6">
+            <div
+              class="header-left d-flex flex-column d-lg-block justify-content-center text-center text-lg-start"
+            >
+              <div class="header-title">JOIN THE PARTY!</div>
+              <div class="header-subtitle mt-4">
+                Stumble Guys is a massive multiplayer party knockout game with
+                up to 32 players online. Join round after round of escalating
+                chaos to stumble through different levels until one victor is
+                crowned!
+              </div>
+
+              <div
+                class="badge-button d-flex flex-column flex-lg-row mt-5 align-items-center"
+              >
+                <a
+                  class="me-0 me-lg-2"
+                  href="https://apps.apple.com/us/app/stumble-guys/id1541153375"
+                  target="_blank"
+                  ><img src="img/app-store-badge.webp" width="162" height="48"
+                /></a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.kitkagames.fallbuddies&pcampaignid=web_share"
+                  target="_blank"
+                  class="mt-2 mt-lg-0"
+                  ><img
+                    src="img/google-play-badge.webp"
+                    width="162"
+                    height="48"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 my-5 mt-lg-0">
+            <div class="phone-container">
+              <div class="myCircle d-none d-sm-block"></div>
+              <i class="bi bi-x-lg myX d-none d-sm-block"></i>
+              <i class="bi bi-dot myDot d-none d-sm-block"></i>
+              <div class="myPhone">
+                <img class="img-fluid" src="img/phone1.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--? Header End -->
+
+    <!--! Quote Start  -->
+    <section class="quote text-center bg-primary py-5">
+      <div class="container px-5">
+        <div class="row justify-content-center gx-5 py-4">
+          <div class="col-xl-8">
+            <div class="h2 fs-1 text-white mb-4">
+              Check out all the latest web exclusive deals from the Stumble Guys
+              web store! Check back regularly for the newest offers.
+            </div>
+            <img
+              class="quote-logo"
+              width="114px"
+              height="48px"
+              src="img/logo.webp"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--? Quote End -->
+
+    <!--! Features Start -->
+    <section class="features bg-tertiary py-0 py-lg-5" id="features">
+      <div class="container px-5 pt-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-4 my-5 mt-lg-0 order-2 order-lg-1">
+            <div class="features-phone-container">
+              <div class="features-myCircle d-none d-md-block"></div>
+              <i class="bi bi-x-lg features-myX d-none d-md-block"></i>
+              <i class="bi bi-dot features-myDot d-none d-md-block"></i>
+              <div class="features-myPhone">
+                <img class="img-fluid features-myPhone" src="img/phone2.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 order-1 order-lg-2">
+            <div class="container-fluid px-5">
+              <div class="row gx-5">
+                <div class="col-lg-6 mb-5">
+                  <div class="text-center">
+                    <i class="bi-controller features-icon mb-3"></i>
+                    <h3>Play With Friends</h3>
+                    <p class="text-muted">
+                      Create your own multiplayer party and play against friends
+                      and family. Find out who runs the fastest!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                  <div class="text-center">
+                    <i class="bi bi-globe2 features-icon mb-3"></i>
+                    <h3>Explore The World</h3>
+                    <p class="text-muted">
+                      Explore the world of Stumble Guys with over 30 maps,
+                      levels and game modes that offer even more ways to play.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                  <div class="text-center">
+                    <i class="bi bi-chevron-double-up features-icon mb-3"></i>
+                    <h3>Boost Your Gameplay</h3>
+                    <p class="text-muted">
+                      Personalize and customize your chosen Stumbler with
+                      special emotes, animations, and footsteps.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="text-center">
+                    <i class="bi bi-trophy features-icon mb-3"></i>
+                    <h3>Stumble Pass</h3>
+                    <p class="text-muted">
+                      Fresh Stumble Pass every month with new content
+                      customizations and other big rewards!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--? Features End -->
+
+    <!--! Basic Start -->
+    <section class="bg-light py-5">
+      <div class="container px-5 text-center text-lg-start">
+        <div
+          class="row gx-5 align-items-center justify-content-center justify-content-lg-between"
+        >
+          <div class="col-lg-5">
+            <h2 class="basic-title py-5">PAC-MAN Community Activations</h2>
+            <p class="basic-subtitle mt-4 pb-5">
+              Stumble Guys joined forces with the iconic PAC-MAN for an
+              unforgettable collaboration! The gaming universe is about to
+              witness a fusion of two beloved worlds, creating a gaming
+              experience like never before.
+            </p>
+          </div>
+          <div class="col-sm-8 col-md-6">
+            <div class="px-5 px-sm-0 m-5 d-flex justify-content-center">
+              <img
+                width="300"
+                height="300"
+                class="rounded-circle"
+                src="img/pacman.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--? Basic End -->
+
+    <!--! CTA Start -->
+    <section class="cta" id="download">
+      <div class="cta-content">
+        <div class="container px-5">
+          <h2 class="text-white display-1 mb-4">
+            Stop waiting.
+            <br />
+            Start playing.
+          </h2>
+          <a
+            class="btn btn-outline-light px-3 px-4 rounded-pill"
+            href="https://apps.apple.com/us/app/stumble-guys/id1541153375"
+            target="_blank"
+            >Download For Free!</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--? CTA End -->
+
+    <!--! Badges Start -->
+    <section class="badges bg-spec py-5">
+      <div class="container p-5">
+        <h2 class="text-center text-white mb-4">Get the game now!</h2>
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+        >
+          <a
+            class="me-lg-3 mb-4 mb-lg-0"
+            target="_blank"
+            href="https://apps.apple.com/us/app/stumble-guys/id1541153375"
+            ><img
+              class="app-badge"
+              width="162px"
+              height="48px"
+              src="img/app-store-badge.webp"
+            />
+          </a>
+          <a
+            class=""
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=com.kitkagames.fallbuddies&pcampaignid=web_share"
+          >
+            <img
+              class="app-badge"
+              width="162px"
+              height="48px"
+              src="img/google-play-badge.webp"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--? Badges End -->
+
+    <!--! Footer Start -->
+    <footer class="bg-dark text-center py-3">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">· © Copyrigt · Kerem Aydın ·</div>
+          <div class="mb-2">
+            All materials related to the game, are used solely for educational
+            purposes, and all rights belong to "Scopely"
+          </div>
+
+          <a href="#!">Privacy</a>
+          <span class="mx-1">·</span>
+          <a href="#!">Terms</a>
+          <span class="mx-1">·</span>
+          <a href="#!">FAQ</a>
+        </div>
+      </div>
+    </footer>
+    <!--? Footer Start -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
