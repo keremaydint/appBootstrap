@@ -11,6 +11,11 @@ Special Font: font-family: 'Kanit', sans-serif;
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 .special-font {
   font-family: Kanit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
